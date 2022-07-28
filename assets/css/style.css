@@ -1,0 +1,15 @@
+#hero{
+    background-image: url("../img/mito-header.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 80vh;
+}
+.wrapper-container{
+    padding: 0 5rem;
+}
+.active{
+    color:cornflowerblue;
+    font-weight: 900;
+    text-decoration: underline;
+}
