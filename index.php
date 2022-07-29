@@ -1,6 +1,7 @@
 <?php 
 $titles="Accueil";
 include("partials/_header.php"); 
+include("functions.php");
 ?>
 
   <div class="container mx-auto ">

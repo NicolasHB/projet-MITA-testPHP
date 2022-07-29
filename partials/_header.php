@@ -1,5 +1,6 @@
 <?php
 $currentPage = $_SERVER ["REQUEST_URI"];
+var_dump($currentPage)
 
 ?>
 <!DOCTYPE html>
@@ -8,7 +9,7 @@ $currentPage = $_SERVER ["REQUEST_URI"];
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
   <title>MITA <?= $titles ?></title>
 </head>
 <body>
@@ -20,21 +21,16 @@ $currentPage = $_SERVER ["REQUEST_URI"];
                 <img class="w-25 h-10" src="assets/img/mito.png" alt="">
             </div>
             <div class="  space-x-10">
-                <a href="/" class="<?= $currentPage === "/" ? "active" : "" ?>">Accueil</a>
-                <a href="Product.php" class="<?= $currentPage === "/Product.php" ? "text-red-500 underline" : "" ?>">Produits</a>
-                <a href="Contact.php" class="<?= $currentPage === "/Contact.php" ? "active underline" : "" ?>">Contact</a>
+                <a href="/" class="<?= $currentPage === "/php/projet%20MITA/" ? "text-green-500 active" : "" ?>">Accueil</a>
+                <a href="Product.php" class="<?= $currentPage === "/php/projet%20MITA/Product.php" ? "active underline text-green-500" : "" ?>">Produits</a>
+                <a href="Contact.php" class="<?= $currentPage === "/php/projet%20MITA/Contact.php" ? "text-green-500 active underline" : "" ?>">Contact</a>
             </div>
         </div>
     </nav>
 
-    <div class="bg-red-500 hero py-5 " id="hero" style="background-image: url('../assets/img/mito-header.jpeg')">
-        <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium suscipit quis iure sequi earum, fugit provident modi tempore deserunt 
-            dolorem cum corporis commodi quisquam non numquam optio natus odit quia explicabo pariatur. Perspiciatis, nulla eaque. Pariatur ducimus optio 
-            itaque ipsum eum tempora. Excepturi labore vel architecto nihil dolor similique repellendus aliquam illo, saepe itaque mollitia. Explicabo dolorem dicta error, 
-            fugit aliquid nobis incidunt reiciendis, ipsam tempora eius debitis modi magni fuga quod numquam eos accusamus! Dolores obcaecati at ipsum et cupiditate! 
-            Maxime veniam rem voluptatibus, non at eligendi culpa impedit placeat eos numquam eius, dolorum ab consequuntur cumque beatae odit.
-        </p>
+    <div class=" hero py-5 align-items self-center" id="hero">
+        <h2 class="text-green-500 font-bold">Le leader français du Bio</h2>
+        <h1 class="font-black">Bienvenue chez Mito</h1>
 
     </div>
     </header>
